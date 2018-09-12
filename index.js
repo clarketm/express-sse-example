@@ -16,7 +16,8 @@ const messageSchema = new mongoose.Schema(
     },
     timestamp: {
       type: Date,
-      default: new Date()
+      default: new Date(),
+      expires: 30 // seconds
     }
   },
   { versionKey: false }
