@@ -1,0 +1,38 @@
+{
+  "name": "express-sse",
+  "version": "1.0.0",
+  "description": "Example SSE (Server Sent Event) API",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:debug": "DEBUG=express:* nodemon --inspect index.js",
+    "start:dev": "nodemon --inspect index.js",
+    "start:prod": "node index.js",
+    "prettier": "prettier --write index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarketm/express-sse.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "sse"
+  ],
+  "bugs": {
+    "url": "https://github.com/clarketm/express-sse/issues"
+  },
+  "homepage": "https://github.com/clarketm/express-sse#readme"
+}
