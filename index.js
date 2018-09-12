@@ -32,6 +32,12 @@ const Message = mongoose.model("Message", messageSchema);
 
 // app.use(bodyParser.json());
 app.use(bodyParser.text({ type: "*/*" }));
+app.use((req, res, next) => {
+  res.set({
+    "Access-Control-Allow-Origin": "*"
+  });
+  next();
+});
 
 app.get("/eventstream", (req, res, next) => {
   res.set({
