@@ -28,8 +28,9 @@
   },
   "keywords": [
     "express",
-    "api",
-    "sse"
+    "streaming-api",
+    "sse",
+    "server-sent-events"
   ],
   "bugs": {
     "url": "https://github.com/clarketm/express-sse/issues"
