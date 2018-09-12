@@ -4,14 +4,13 @@ Real-time Express streaming API leveraging Server Sent Events (SSE)
 ### Example
 ```bash
 
-# Start
+# start
 $ yarn start
 
-# Subscribe
+# subscribe
 $ curl -XGET "http://localhost:3000/eventstream"
 
-# Publish
-$ MESSAGE="some message"
-$ curl -XPOST "http://localhost:3000/message" -d "$MESSAGE"
+# publish
+$ curl -XPOST "http://localhost:3000/message" -d "some message"
 
 ```
