@@ -1,4 +1,4 @@
-# express-sse
+# express-sse-example
 Real-time Express streaming API leveraging Server Sent Events (SSE) 
 
 ### Example
