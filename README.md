@@ -25,3 +25,11 @@ es.addEventListener("message", event => console.log(JSON.parse(event.data)));
 # POST /message
 $ curl -XPOST "http://localhost:3000/message" -d "some message"
 ```
+
+#### All subscribers will receive the event payload
+```json
+{
+  "message": "whassup", 
+  "timestamp": "2018-09-12T07:25:45.403Z"
+}
+```
